@@ -1,0 +1,118 @@
+$ui_width: 35%;
+
+$blue: #4066A5;
+$dark: #131821;
+$grey: #6A707B;
+$light-grey: #E3E3E4;
+$light: #F2F5FA;
+
+$facebook: #4267b2;
+$facebook_hover: #2F4A80;
+$instagram: #C13584;
+$instagram_hover: #8F2762;
+$twitter: #1DA1F2;
+$twitter_hover: #177FBF;
+
+@mixin flexDir($direction){
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: $dark;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    @include flexDir(column);
+    .bg_img{
+        position: absolute;
+        height: 100vh;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        // display: none;
+    }
+}
+
+h1{
+    font-family: Georgia;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 44px;
+}
+
+p{
+    font-family: Arial;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: $grey;
+    margin-top: 15px;
+    width: 400px;
+}
+
+Header{
+    padding: 100px;
+    width: $ui_width;
+    @include flexDir(row);
+    justify-content: space-between;
+    .logo{
+        @include flexCenter();
+        p{
+            margin-left: 15px;
+        }
+    }
+    ul{
+        list-style-type: none;
+        @include flexDir(row);
+        // margin-left: auto;
+        li{
+            margin-right: 30px;
+            a{
+                text-decoration: none;
+                color: $grey;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+Main{
+    padding: 100px;
+    width: $ui_width;
+    input{
+        box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+    }
+    .subscription{
+        
+        .aggrievement{
+            display: inline-flex;
+        }
+    }
+    .social_links{
+        a{
+            box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+            img{
+                height: 16px;
+                color: $facebook; //BUG!!!
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    
+}
