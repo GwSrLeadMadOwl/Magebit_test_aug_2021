@@ -11,40 +11,44 @@
     <title>pineapple.</title>
 </head>
 
-<body>
-    <Header>
-        <ul>
+<body ontouchstart="">
+
+    <div class="nav-bar">
+        <a href="#">
             <div class="logo">
                 <img src="./src/Union.svg" alt="union.svg">
                 <p>pineapple.</p>
             </div>
+        </a>
+        <ul>
             <li><a href="#">About</a></li>
             <li><a href="#">How it works</a></li>
             <li><a href="#">Contacts</a></li>
         </ul>
-    </Header>
+    </div>
 
-    <Main>
-        <div class="subscription">
-            <h1>Subscribe to newslatter</h1>
-            <p>Subscribe to our newsletter and get 10% discount on pineapple glasses.</p>
-            <form action="">
+    <div class="subscription">
+        <h1>Subscribe to newslatter</h1>
+        <p>Subscribe to our newsletter and get 10% discount on pineapple glasses.</p>
+        <form action="">
+            <div class="email-input">
+                <div class="blue-line"></div>
                 <input type="email" placeholder="Type your email address here..." required>
                 <button type="post"><img src="./src/ic_arrow.svg" alt="arrow.svg"></button>
-            </form>
-            <div class="aggrievement">
-                <input type="checkbox"></input>
+            </div>
+            <div class="TOS">
+                <input type="checkbox" required></input>
                 <p>I agree to <a href="#">terms of service</a></p>
             </div>
-            <hr>
-            <div class="social_links">
-                <a href="#"><img src="./src/ic_facebook.svg" alt="facebook"></a>
-                <a href="#"><img src="./src/ic instagram.svg" alt="instgram"></a>
-                <a href="#"><img src="./src/ic_twitter.svg" alt="twitter"></a>
-                <a href="#"><img src="./src/ic youtube.svg" alt="youtube"></a>
-            </div>
+        </form>
+        <hr>
+        <div class="social_links">
+            <a href="#" class="fb"><img src="./src/ic_facebook.svg" alt="facebook"></a>
+            <a href="#" class="ins"><img src="./src/ic instagram.svg" alt="instgram"></a>
+            <a href="#" class="tw"><img src="./src/ic_twitter.svg" alt="twitter"></a>
+            <a href="#" class="yt"><img src="./src/ic youtube.svg" alt="youtube"></a>
         </div>
-    </Main>
+    </div>
 
     <div class="bg_img">
         <img src="./src/image_summer.png" alt="img_summer.jpg">
