@@ -1,7 +1,6 @@
 const emailSubmit = () => {
     const email = document.getElementById('email_input').value;
     const checkTOS = document.getElementById('check_tos').checked;
-    // document.getElementById("message").innerHTML = '';
 
     if (email === '') {
         document.getElementById("message").innerHTML = "Email address is required";
@@ -23,6 +22,10 @@ const emailSubmit = () => {
         document.getElementById("message").innerHTML = `Success! Email ${email} added!!`;
         document.getElementById('email_input').value = '';
         document.getElementById('check_tos').checked = false;
+
+        document.getElementById("intro").classList.add("hide");
+        document.getElementById("succeded").classList.remove("hide");
+        document.getElementById("succeded").classList.add("show");
     }
 };
 

@@ -28,22 +28,30 @@
     </div>
 
     <div class="subscription">
-        <h1>Subscribe to newslatter</h1>
-        <p>Subscribe to our newsletter and get 10% discount on pineapple glasses.</p>
-        <form id="form" action="#" onsubmit="return false" novalidate>
-            <div class="email-input">
-                <div class="blue-line"></div>
-                <input id="email_input" type="email" name="email" placeholder="Type your email address here...">
-                <button id="post_button" type="post" onclick="emailSubmit()">
-                    <img src="./src/ic_arrow.svg" alt="arrow.svg">
-                </button>
-            </div>
-            <span id="message" class="fail"></span>
-            <div class="TOS">
-                <input id="check_tos" type="checkbox"></input>
-                <p>I agree to <a href="#">terms of service</a></p>
-            </div>
-        </form>
+        <div id="intro">
+            <h1>Subscribe to newslatter</h1>
+            <p>Subscribe to our newsletter and get 10% discount on pineapple glasses.</p>
+            <form id="form" action="#" onsubmit="return false" novalidate>
+                <div class="email-input">
+                    <div class="blue-line"></div>
+                    <input id="email_input" type="email" name="email" placeholder="Type your email address here...">
+                    <button id="post_button" type="post" onclick="emailSubmit()">
+                        <img src="./src/ic_arrow.svg" alt="arrow.svg">
+                    </button>
+                </div>
+                <span id="message" class="fail"></span>
+                <div class="TOS">
+                    <input id="check_tos" type="checkbox"></input>
+                    <p>I agree to <a href="#">terms of service</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div id="succeded" class="hide">
+            <img src="./src/ic_success.svg" alt="success.svg">
+            <h1>Thanks for subscribing!</h1>
+            <p>You have successfully subscribed to our email listing. Check your email for the discount code.</p>
+        </div>
         <hr>
         <div class="social_links">
             <a href="#" class="fb"><img src="./src/ic_facebook.svg" alt="facebook"></a>
