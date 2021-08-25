@@ -10,17 +10,17 @@ To work with it. You should download a .zip folder with additional files. Unzip 
 
 Go to the link "localhost/email_sub.php/index.php" in the browser. And you will see this page designed for Pineapple eCommerce.
 
-![](email_subscription/screenshots/main.jpg)
+![alt_text](email_sub/screenshots/main.png)
 
 Here you can write any email address except .co provider and check for acception terms and conditions (don't worry it won't make any hacker's scheme).
 
-After submition you would see this message about succesful subscription but it is just a sign that your email saved in the SQL databse. After 4 seconds webpage will open a table database.
+After submission you would see this message about succesful subscription but it is just a sign that your email saved in the SQL databse. After 4 seconds webpage will open a table database.
 
-![](email_subscription/screenshots/success.jpg)
+![alt_text](email_sub/screenshots/success.png)
 
 Here you can filter a list by email host, find specific email and if you wish to delete it.
 
-![](email_subscription/screenshots/email_list.jpg)
+![alt_text](email_sub/screenshots/table.png)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
