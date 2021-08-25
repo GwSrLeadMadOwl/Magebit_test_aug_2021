@@ -80,8 +80,8 @@ asort($res);
         </table>
     </form>
 
-    <script src="./dark-mode.js"></script>
-    <script src="./dynamicSearchResults.js"></script>
+    <script src="../js/dark-mode.js"></script>
+    <script src="../js/dynamicSearchResults.js"></script>
 </body>
 
 </html>

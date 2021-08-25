@@ -36,7 +36,7 @@ document.getElementById("submitForm").addEventListener("submit", (e) => {
                 }
             }
         };
-        http.open("POST", "./js/process.php", true);
+        http.open("POST", "./php/process.php", true);
         http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         http.send("email=" + email);
     }
